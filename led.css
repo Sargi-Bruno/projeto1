@@ -1,0 +1,35 @@
+body {
+    background-color: pink;
+}
+
+.main {
+    text-align: center;
+}
+
+.button-submit {
+    color: black;
+    border-radius: 6px;
+    border-color: black;
+    background-color: plum;
+    font-size: 20px;
+    float: left;
+    padding: 10px 24px;
+    margin: 15px;
+  }
+
+  .button-submit:hover {
+      background-color: violet;
+  }
+
+  .menu {
+    width: 20%;
+    margin: 0 auto;
+  }
+
+  h1 {
+      font-family: 'Comic Sans', Comic Sans MS, cursive;
+  }
+
+  button {
+    font-family: 'Comic Sans', Comic Sans MS, cursive;
+  }

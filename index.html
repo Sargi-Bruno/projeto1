@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='zxx'>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Querido Led</title>
+    <link rel="stylesheet" href="led.css" type="text/css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="title">
+            <h1>Meu Querido Led, hoje você...</h1>
+        </div>
+
+        <div class="menu">
+                <button type="submit" class="button-submit" name="ascender">Ascenderás</button>
+                <button type="submit" class="button-submit" name="apagar">Apagarás</button>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+        $(document).ready(function() {
+            $('ascender').click(function() {
+                $.post('/ascender', function(returnedData, statusRequest) {
+                    alert('Data: ' + returnedData + '\nStatus: ' + statusRequest)
+                })
+            })
+        })
+
+        $(document).ready(function() {
+            $('apagar').click(function() {
+                $.post('/apagar', function(returnedData, statusRequest) {
+                    alert('Data: ' + returnedData + '\nStatus: ' + statusRequest)
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>
